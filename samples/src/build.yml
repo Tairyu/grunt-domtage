@@ -1,0 +1,11 @@
+- name: index
+  layouts:
+    - header: header/default
+    - footer: footer/default
+    - "#content": index/content
+    - ul.side-panel: index/side-panel
+  patterns:
+    - name: index2
+      layouts:
+        - .sign-in: header/sign-up
+    - name: index2/noreplace
