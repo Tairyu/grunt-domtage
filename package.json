@@ -1,25 +1,37 @@
 {
   "name": "grunt-domtage",
-  "version": "0.0.1",
-  "private": true,
   "description": "Grunt task for domtage",
+  "version": "0.0.2",
   "dependencies": {
-    "domtage": "git://github.com/Tairyu/domtage.git",
-    "predicates": "1.0.0"
+    "domtage": "0.1.1"
   },
   "devDependencies": {
+    "fixpack": "2.2.0",
     "grunt": "0.4.5",
+    "grunt-cli": "0.1.13",
     "grunt-contrib-clean": "0.6.0",
-    "jit-grunt": "0.9.1"
+    "jit-grunt": "0.9.1",
+    "npm-run-all": "1.2.5",
+    "rimraf": "2.3.4"
   },
+  "homepage": "https://github.com/Tairyu/grunt-domtage",
+  "license": "MIT",
+  "main": "tasks/domtage.js",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/Tairyu/grunt-domtage.git"
   },
-  "author": "Tairyu <ta_shimizu@waku-2.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Tairyu/grunt-domtage/issues"
+  "scripts": {
+    "fixpack": "fixpack",
+    "grunt": "grunt",
+    "module:install": "npm i",
+    "module:rimraf": "rimraf node_modules",
+    "test": "npm-run-all module:rimraf module:install grunt fixpack"
   },
-  "homepage": "https://github.com/Tairyu/grunt-domtage"
+  "files": [
+    "tasks",
+    "LICENSE",
+    "README.md"
+  ]
 }

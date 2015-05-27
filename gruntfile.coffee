@@ -12,7 +12,7 @@ module.exports = (grunt) ->
         srcDir: 'samples/src'
         destDir: 'samples/dist'
       example:
-        recipes: [
+        recipe: [
           {
             name: 'index'
             layouts: [

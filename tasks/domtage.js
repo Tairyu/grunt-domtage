@@ -7,7 +7,7 @@ module.exports = function (grunt) {
   grunt.registerMultiTask('domtage', 'generate html-files with domtage', function () {
 
     var opts = this.options();
-    Domtage(opts, this.data.recipes).generate();
+    new Domtage(opts, this.data.recipe).generate();
     grunt.log.ok('all recipes complete.');
   });
 };
