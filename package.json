@@ -16,7 +16,6 @@
   },
   "homepage": "https://github.com/Tairyu/grunt-domtage",
   "license": "MIT",
-  "main": "tasks/domtage.js",
   "private": true,
   "repository": {
     "type": "git",
