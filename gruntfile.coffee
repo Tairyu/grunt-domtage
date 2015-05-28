@@ -34,6 +34,14 @@ module.exports = (grunt) ->
             ]
           }
         ]
+      fromFiles:
+        options:
+          destDir: 'samples/dist/fromFiles'
+        src: [
+          'samples/src/build.json',
+          'samples/src/build.yml',
+          #'samples/src/build.txt'
+        ]
 
   grunt.loadTasks 'tasks'
 
